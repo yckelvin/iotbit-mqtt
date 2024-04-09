@@ -1,6 +1,6 @@
 input.onButtonPressed(Button.A, function () {
     light_level = pins.analogReadPin(AnalogPin.P1)
-    ESP8266_IoT.publishMqttMessage("xxxxxx", "myhome/null/bedroom-light", ESP8266_IoT.QosList.Qos2)
+    ESP8266_IoT.publishMqttMessage("12", "myhome/null/bedroom-light", ESP8266_IoT.QosList.Qos2)
 })
 let light_level = 0
 basic.showNumber(0)
@@ -15,6 +15,6 @@ convertToText(client_id),
 "test",
 ""
 )
-ESP8266_IoT.connectMQTT("192.168.0.32", 1884, false)
+ESP8266_IoT.connectMQTT("192.168.0.240", 1884, false)
 basic.showNumber(2)
 basic.showIcon(IconNames.Yes)

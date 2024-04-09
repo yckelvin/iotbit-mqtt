@@ -1,5 +1,5 @@
 {
-    "name": "iotbit-mqtt",
+    "name": "iotbit-mqtt-connect",
     "description": "",
     "dependencies": {
         "core": "*",
